@@ -1,0 +1,422 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, sans-serif;
+
+}
+
+:root {
+    --bg-color: rgb(0, 0, 0);
+    --snd-bg-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+    --main-color: #ce00c7;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0 5rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+::selection {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+
+section {
+    margin-top: 15px;
+}
+
+.mt-15px {
+    margin-top: 15px;
+}
+
+/*Header Section Code*/
+
+Header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgb(0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+
+
+}
+
+span {
+    color: var(--main-color);
+
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color: var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.2 ease;
+}
+
+.nav-btn:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 18px var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+/*Home Section Code*/
+
+/* .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.home {
+    position: relative;
+    background: url('./assets/images/gym0.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+
+.home-content h3 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.home-content span {
+    font-size: 4rem;
+    font-weight: 550;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img {
+    width: 45vw;
+}
+
+.home-img::before {
+    content: 'FITNESS';
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-505);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--text-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+/*Services Section Code*/
+
+.services {
+    background: var(--snd-bg-color);
+}
+
+.heading {
+    text-align: center;
+    font-size: 6.5rem;
+}
+
+.services-content {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, auto)); */
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.1rem;
+}
+
+.row {
+    background: var(--bg-color);
+    border-radius: 27px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.row img {
+    height: auto;
+    width: 100%;
+    border-radius: 27px;
+    margin-bottom: 1.4rem;
+}
+
+.row h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.row:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.04);
+    cursor: pointer;
+}
+
+/* About Section Code */
+
+/* .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-img img {
+    width: 50vw;
+    border: 2px solid var(--text-color);
+    border-radius: 1rem;
+    transition: 0.2s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.01);
+    border: 2px solid var(--main-color);
+}
+
+about-content .heading {
+    text-align: center;
+    font-size: 6rem;
+}
+
+.about-content {
+    padding: 0 3rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 2rem;
+} */
+
+
+.about-container h2 {
+    font-size: 4rem;
+}
+
+.about-container p {
+    font-size: 1.5rem;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    /* Flex items ko wrap karne ke liye */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+    /* Space between items */
+}
+
+.about-text {
+    flex: 1;
+    /* Text area will take equal space */
+    max-width: 600px;
+}
+
+.about-text h2 {
+
+    font-size: 6rem;
+}
+
+.about-text p {
+    font-size: 1.6rem;
+}
+
+
+.about-img {
+    flex: 1;
+    /* Image area will take equal space */
+    max-width: 600px;
+    /* Image ki maximum width */
+    width: 100%;
+    /* Responsive width */
+    border-radius: 10px;
+    /* Image corners round karne ke liye */
+    object-fit: cover;
+    /* Image ko crop hone se bachane ke liye */
+}
+
+
+/*  for responsive  */
+
+
+
+/* service section */
+
+@media (max-width: 768px) {
+
+    .about-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-container p {
+        font-size: 0.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+        /* Items vertically stack karenge */
+        text-align: center;
+        /* Center align content */
+    }
+
+    .about-img {
+        max-width: 400px;
+        /* Mobile screens par image chhoti */
+    }
+
+    .services-content {
+        grid-template-columns: repeat(2, 1fr);
+        /* Smaller screens, 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-img {
+        max-width: 300px;
+        /* Small devices par aur chhoti image */
+    }
+
+    .about-text {
+        font-size: 14px;
+        /* Smaller font size */
+    }
+
+    .about-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-container p {
+        font-size: 0.5rem;
+    }
+
+    .services-content {
+        grid-template-columns: 1fr;
+        /* Smallest screens, 1 column */
+    }
+}

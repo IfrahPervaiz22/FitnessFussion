@@ -414,7 +414,7 @@ span {
     font-weight: 700;
     padding: 7px 0;
     color: var(--text-color);
-    border-bottom: 2px solid #ce00c7;
+    border-bottom: 2px solid #a45ceb;
     transition: all 0.2s ease;
 }
 
@@ -432,22 +432,4 @@ span {
 .box:hover {
     border: 1px solid var(--main-color);
     transform: translateY(-5px);
-}
-
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 1rem;
-    box-shadow: none;
-    font-size: 1.6rem;
-    color: var(--bg-color);
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    transition: 0.5s ease;
-}
-
-.btn:hover {
-    color: var(--text-color);
-    box-shadow: 0 0 1.6rem var(--main-color);
 }

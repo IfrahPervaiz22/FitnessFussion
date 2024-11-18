@@ -369,11 +369,11 @@ span {
 
 /*Pricing Section Code*/
 
-.plans {
+.membership {
     background: var(--snd-bg-color);
 }
 
-.plans-content {
+.membership-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;

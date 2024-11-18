@@ -135,7 +135,7 @@ span {
 
 .home {
     position: relative;
-    background: url('./assets/images/gym0.jpg') no-repeat center center;
+    background: url("../images/gym0.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;

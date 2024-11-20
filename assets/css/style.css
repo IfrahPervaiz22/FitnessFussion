@@ -270,17 +270,14 @@ span {
 .about {
     display: flex;
     flex-wrap: wrap;
-    /* Flex items ko wrap karne ke liye */
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     gap: 20px;
-    /* Space between items */
 }
 
 .about-text {
     flex: 1;
-    /* Text area will take equal space */
     max-width: 600px;
 }
 
@@ -296,21 +293,13 @@ span {
 
 .about-img {
     flex: 1;
-    /* Image area will take equal space */
     max-width: 600px;
-    /* Image ki maximum width */
     width: 100%;
-    /* Responsive width */
     border-radius: 10px;
-    /* Image corners round karne ke liye */
     object-fit: cover;
-    /* Image ko crop hone se bachane ke liye */
 }
 
-
 /*  for responsive  */
-
-
 
 /* service section */
 
@@ -326,31 +315,25 @@ span {
 
     .about {
         flex-direction: column;
-        /* Items vertically stack karenge */
         text-align: center;
-        /* Center align content */
     }
 
     .about-img {
         max-width: 400px;
-        /* Mobile screens par image chhoti */
     }
 
     .services-content {
         grid-template-columns: repeat(2, 1fr);
-        /* Smaller screens, 2 columns */
     }
 }
 
 @media (max-width: 480px) {
     .about-img {
         max-width: 300px;
-        /* Small devices par aur chhoti image */
     }
 
     .about-text {
         font-size: 14px;
-        /* Smaller font size */
     }
 
     .about-container h2 {
@@ -363,7 +346,6 @@ span {
 
     .services-content {
         grid-template-columns: 1fr;
-        /* Smallest screens, 1 column */
     }
 }
 

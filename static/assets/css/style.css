@@ -60,8 +60,6 @@ Header {
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
 }
-
-
 .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -72,20 +70,14 @@ Header {
 
 .logo:hover {
     transform: scale(1.1);
-
-
 }
-
 span {
     color: var(--main-color);
-
 }
 
 .navbar {
     display: flex;
-
 }
-
 .navbar a {
     font-size: 1.8rem;
     font-weight: 500;
@@ -94,7 +86,6 @@ span {
     transition: all 0.2s ease;
     border-bottom: 3px solid transparent;
 }
-
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
@@ -258,6 +249,8 @@ span {
     transform: translateY(-5px) scale(1.04);
     cursor: pointer;
 }
+
+/*About section code*/
 
 .about-container h2 {
     font-size: 4rem;
